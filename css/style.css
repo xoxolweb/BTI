@@ -1,0 +1,11 @@
+.fff p{
+    font-family: 'NotoSans';
+    font-style: italic;
+
+}
+div  i{
+width: 40px;
+height: 40px;
+font-size: 40px;
+color: red;
+}
