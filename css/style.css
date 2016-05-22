@@ -1,5 +1,5 @@
 .container {
-  width: 95%;
+    width: 95%;
     max-width: 1340px;
     margin: auto;
     /*border: 1px solid;*/
@@ -45,10 +45,14 @@
     display: flex;
     justify-content: space-between;
 }
-.logo{
-  margin-top: 20px;
+.logo {
+    margin-top: 20px;
+}
+#touch_menu {
+    display: none;
 }
 .nav_block {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -77,15 +81,46 @@ nav a span {
     opacity: 0;
     background-color: #130902;
 }
-nav a:hover span {
+nav a:hover span, nav a:focus span {
     top: 0;
     height: 100%;
     opacity: 1;
 }
-nav a:focus span {
-    top: 0;
-    height: 100%;
-    opacity: 1;
+.toggle-mnu {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-top: 14px;
+}
+.toggle-mnu span:after, .toggle-mnu span:before {
+    position: absolute;
+    top: 9px;
+    left: 0;
+    content: "";
+}
+.toggle-mnu span:after {
+    top: 18px;
+}
+.toggle-mnu span {
+    position: relative;
+    display: block;
+}
+.toggle-mnu span, .toggle-mnu span:after, .toggle-mnu span:before {
+    width: 100%;
+    height: 2px;
+    transition: all 0.3s;
+    border-radius: 2px;
+    background-color: #130902;
+    backface-visibility: hidden;
+}
+.toggle-mnu.on span {
+    background-color: transparent;
+}
+.toggle-mnu.on span:before {
+    transform: rotate(45deg) translate(-1px, 0px);
+}
+.toggle-mnu.on span:after {
+    transform: rotate(-45deg) translate(6px, -7px);
 }
 .head_locations {
     position: relative;
@@ -105,18 +140,18 @@ nav a:focus span {
     left: -35px;
     font-size: 27px;
 }
-.callback_blosk {
+.callback_block {
     display: flex;
     margin-top: 22px;
     align-self: flex-end;
 }
-.callback_blosk {
+.callback_block {
     text-transform: uppercase;
 }
-.callback_blosk p {
+.callback_block p {
     font: 400 18px/40px Exo2, sans-serif;
 }
-.callback_blosk button {
+.callback_block button {
     margin-left: 55px;
     padding: 10px 55px;
     color: #fff;
@@ -124,7 +159,7 @@ nav a:focus span {
     background-color: #130902;
     font: 600 18px/18px Exo2, sans-serif;
 }
-.callback_blosk button:hover {
+.callback_block button:hover {
     cursor: pointer;
     color: #130902;
     background-color: #fff;

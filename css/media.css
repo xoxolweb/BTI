@@ -3,64 +3,110 @@
 
 /* Large Devices, Wide Screens */
 
-@media  screen and (max-width: 1280px) {
-  nav a{
-    font-size: 17px;
-    padding: 15px 45px;
-  }
-  .logo a img{
-    width: 240px;
-    height: 128px;
-  }
+@media only screen and (max-device-width: 1280px) {
+    nav a {
+        padding: 15px 45px;
+        font-size: 17px;
+    }
+    .logo a img {
+        width: 240px;
+        height: 128px;
+    }
 }
 
 /* Medium Devices, Desktops */
 
-@media  screen and (max-width: 992px) {
-  nav a{
-    font-size: 17px;
-    padding: 15px 25px;
-  }
+@media only screen and (max-device-width: 992px) {
+    nav a {
+        padding: 15px 25px;
+        font-size: 17px;
+    }
 }
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-device-width: 768px) {
     /*Disable Animation on Mobile Devices*/
-
+    .top_body .container {
+        justify-content: space-between;
+    }
+    nav {
+        position: absolute;
+        right: 0;
+        display: none;
+        width: 250px;
+        background: #130902;
+    }
+    #touch_menu {
+        z-index: 10;
+        display: inline-block;
+    }
+    .mob_menu {
+        position: fixed;
+        right: 10px;
+    }
+    nav a {
+        display: block;
+        margin-top: 2px;
+        text-align: center;
+        color: #ececef;
+    }
+    nav a:hover, nav a:focus {
+        color: #130902;
+    }
+    nav a span {
+        top: 0;
+        right: -35px;
+        width: 0;
+        height: 100%;
+        background-color: #ececef;
+    }
+    nav a:hover span, nav a:focus span {
+        right: 0;
+        width: 100%;
+        opacity: 1;
+    }
+    .head_locations {
+        display: none;
+    }
+    .callback_block {
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
-
-@media only screen and (max-width: 480px) {
-
+@media only screen and (max-device-width: 640px) {
+  .top_ln_center{
+    display: none;
+  }
 }
+
+@media only screen and (max-device-width: 480px) {}
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {
-
-}
+@media only screen and (max-device-width: 320px) {}
 
 /*==========  Mobile First Method  ==========*/
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (min-width: 320px) {}
+@media only screen and (min-device-width: 320px) {}
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-width: 480px) {}
+@media only screen and (min-device-width: 480px) {}
 
 /* Small Devices, Tablets */
+@media only screen and (min-device-width: 640px) {}
 
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-device-width: 768px) {}
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-device-width: 992px) {}
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-device-width: 1200px) {}

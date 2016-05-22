@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/fonts.css">
     <link rel="stylesheet" href="css/media.css">
+    <script src="labs/jquery-2.2.4.min.js"></script>
 </head>
 
 <body>
@@ -34,18 +35,21 @@
                     <a href="#"><img src="img/logo.svg" alt="logo"></a>
                 </div>
                 <div class="nav_block">
-                    <nav>
-                        <a href="#">О нас<span></span></a>
-                        <a href="#">Услуги<span></span></a>
-                        <a href="#">Цены<span></span></a>
-                        <a href="#">Новости<span></span></a>
-                        <a href="#">Статьи<span></span></a>
-                        <a href="#">Контакты<span></span></a>
-                    </nav>
+                    <div class="mob_menu">
+                        <a href="#" id="touch_menu" class="toggle-mnu hidden-lg"><span></span></a>
+                        <nav>
+                            <a href="#">О нас<span></span></a>
+                            <a href="#">Услуги<span></span></a>
+                            <a href="#">Цены<span></span></a>
+                            <a href="#">Новости<span></span></a>
+                            <a href="#">Статьи<span></span></a>
+                            <a href="#">Контакты<span></span></a>
+                        </nav>
+                    </div>
                     <div class="head_locations">
                         <a href="#"><i class="icon-location"></i>мы на карте</a>
                     </div>
-                    <div class="callback_blosk">
+                    <div class="callback_block">
                         <p>г. Киев 04053, ул. Сечевых Стрельцов 37/41, оф.777</p>
                         <button type="button" name="button">Заказ онлайн</button>
                     </div>
@@ -54,6 +58,13 @@
         </div>
     </header>
 
-</body>
 
+
+
+
+
+
+    
+    <script src="js/script.js"></script>
+</body>
 </html>
