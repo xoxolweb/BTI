@@ -3,32 +3,114 @@
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (max-device-width: 1280px) {
+@media only screen and (max-width: 1280px) and (min-width: 1110px) {
     nav a {
-        padding: 15px 45px;
-        font-size: 17px;
+        padding: 15px 30px;
+        font-size: 1.1em;
+    }
+    nav{
+      width: 100%;
     }
     .logo a img {
-        width: 240px;
-        height: 128px;
+        width: 90%;
+    }
+    .callback_block p {
+        font-size: 16px
+    }
+    .callback_block button {
+        padding: 8px 40px;
+        font-size: 16px;
+    }
+    /*SECTION_SERVICES-----------------------------*/
+    .services_nav {
+        width: 34%;
+        min-width: 385px;
+    }
+    .services_about{
+      width: 64%;
+    }
+    .services_nav_cont>a{
+      font-size: 22px;
+      margin-bottom: 12px;
     }
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1110px) and (min-width: 980px) {
 
-@media only screen and (max-device-width: 992px) {
     nav a {
-        padding: 15px 25px;
-        font-size: 17px;
+        padding: 18px 22px;
+        font-size: 16px;
+    }
+    .logo a img {
+        width: 80%;
+    }
+    .callback_block {
+        margin-top: 20px;
+    }
+    .callback_block p {
+      padding-right:30%;
+      padding-top: 10px;
+      font-size: 15px;
+    }
+    .callback_block button {
+        padding: 5px 20px;
+        font-size: 15px;
+    }
+/*SECTION_SERVICES-----------------------------*/
+    .services_nav {
+        width: 41%;
+    }
+    .services_about{
+      width: 58%;
+    }
+
+}
+@media only screen and (max-width: 980px) and (min-width: 768px) {
+    nav a {
+        padding: 20px 12px;
+        font-size: 16px;
+    }
+    .logo a img {
+        width: 75%;
+    }
+/*SECTION_SERVICES-----------------------------*/
+    .services_nav {
+      width: 100%;
+      display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+    }
+    .services_nav_cont>a{
+      flex: 1 1 300px;
+      margin: 5px;
+      font-size: 18px;
+    }
+    .services_about{
+      width: 100%;
+    }
+
+    .services_nav_cont ul{
+      display: none;
+      z-index: 100;
+      background-color: #fff;
+      position: absolute;
+    }
+    .services .container {
+        display: flex;
+        flex-direction: column;
     }
 }
 
 /* Small Devices, Tablets */
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
     /*Disable Animation on Mobile Devices*/
     .top_body .container {
         justify-content: space-between;
+    }
+    .logo a img {
+        width: 90%;
     }
     nav {
         position: absolute;
@@ -72,41 +154,43 @@
     .callback_block {
         display: none;
     }
+  /*SECTION_SERVICES-----------------------------*/
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-device-width: 640px) {
-  .top_ln_center{
-    display: none;
-  }
-}
 
-@media only screen and (max-device-width: 480px) {}
+@media only screen and (max-width: 640px) {
+    .top_ln_center {
+        display: none;
+    }
+  /*SECTION_SERVICES-----------------------------*/
+}
+@media only screen and (max-width: 480px) {}
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-device-width: 320px) {}
+@media only screen and (max-width: 320px) {}
 
 /*==========  Mobile First Method  ==========*/
 
 
 /* Custom, iPhone Retina */
 
-@media only screen and (min-device-width: 320px) {}
+@media only screen and (min-width: 320px) {}
 
 /* Extra Small Devices, Phones */
 
-@media only screen and (min-device-width: 480px) {}
+@media only screen and (min-width: 480px) {}
 
 /* Small Devices, Tablets */
-@media only screen and (min-device-width: 640px) {}
 
-@media only screen and (min-device-width: 768px) {}
+@media only screen and (min-width: 640px) {}
+@media only screen and (min-width: 768px) {}
 
 /* Medium Devices, Desktops */
 
-@media only screen and (min-device-width: 992px) {}
+@media only screen and (min-width: 992px) {}
 
 /* Large Devices, Wide Screens */
 
-@media only screen and (min-device-width: 1200px) {}
+@media only screen and (min-width: 1200px) {}

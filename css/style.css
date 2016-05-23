@@ -10,6 +10,9 @@
 
 /*HEADER-------------------------*/
 
+header {
+    padding-bottom: 40px;
+}
 .top_line {
     width: 100%;
     height: 50px;
@@ -17,11 +20,14 @@
 }
 .top_line .container {
     display: flex;
-    line-height: 45px;
+    line-height: 50px;
     justify-content: space-between;
 }
+.top_ln_left, .top_ln_right {
+    width: 135px;
+}
 .top_ln_left a i, .top_ln_right a i {
-    margin: 0 1px;
+    margin: 0 2px;
     padding: 4px 2px;
     color: #ebebee;
     border: 2px solid #ebebee;
@@ -46,7 +52,7 @@
     justify-content: space-between;
 }
 .logo {
-    margin-top: 20px;
+    margin-top: 40px;
 }
 #touch_menu {
     display: none;
@@ -59,14 +65,15 @@
 nav {
     display: flex;
     flex-wrap: wrap;
+        justify-content: flex-end;
 }
 nav a {
     position: relative;
     z-index: 2;
-    padding: 15px 40px;
+    padding: 18px 40px;
     text-transform: uppercase;
     color: #130902;
-    font: 700 18px/18px Exo2, sans-serif;
+    font: 900 18px/18px Exo2, sans-serif;
 }
 nav a:hover, nav a:focus {
     color: #ececef;
@@ -124,43 +131,149 @@ nav a:hover span, nav a:focus span {
 }
 .head_locations {
     position: relative;
-    margin: 20px 0 0 28%;
 }
 .head_locations a {
+    margin-left: 10px;
     color: #130902;
     border-bottom: 1px solid rgba(153, 151, 149, 0);
-    font: 400 18px/18px Exo2, sans-serif
+    font: 600 18px/18px Exo2, sans-serif
 }
 .head_locations a:hover {
     border-bottom: 1px solid rgba(153, 151, 149, 1);
 }
 .head_locations a i {
     position: absolute;
-    top: 0px;
+    top: -5px;
     left: -35px;
-    font-size: 27px;
+    font-size: 35px;
 }
 .callback_block {
     display: flex;
-    margin-top: 22px;
-    align-self: flex-end;
-}
-.callback_block {
-    text-transform: uppercase;
+    margin-top: 20px;
+    justify-content: flex-end;
 }
 .callback_block p {
-    font: 400 18px/40px Exo2, sans-serif;
+    width: 100%;
+    padding-right: 35%;
+    padding-top: 20px;
+    font: 700 18px/40px Exo2, sans-serif;
 }
 .callback_block button {
-    margin-left: 55px;
     padding: 10px 55px;
+    text-transform: uppercase;
     color: #fff;
     border: 2px solid #ff7d13;
     background-color: #130902;
     font: 600 18px/18px Exo2, sans-serif;
+    align-self: flex-end;
 }
 .callback_block button:hover {
     cursor: pointer;
     color: #130902;
     background-color: #fff;
+}
+
+/*SECTION_SERVICES-----------------------------*/
+
+.services {
+    width: 100%;
+    height: 950px;
+    background: fixed #fff url("../img/fon1.jpg") 0 300px no-repeat;
+    background-size: cover;
+}
+.services .container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+.services_nav {
+    width: 30%;
+}
+.services_nav_cont {
+    margin-bottom: 10px;
+    position: relative;
+    padding: 20px 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.services_nav_cont>a {
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 17px;
+    min-width: 343px;
+    color: #ececef;
+    font: bold 24px/24px Exo2, sans-serif;
+}
+.services_nav_cont ul li a {
+    display: inline-block;
+    width: 100%;
+    color: #ececef;
+    font: 400 18px/15px Exo2, sans-serif;
+    padding: 12px 0 10px 12px;
+    padding-right: -10px;
+    border: 1px solid rgba(0, 0, 0, 0);
+}
+.services_nav_cont ul li a:hover{
+    border: 1px solid rgba(255, 255, 255, 1);
+}
+.services_nav_cont ul li a:focus{
+  border: 1px solid rgba(255, 255, 255, 1);
+  background-color: #2b2a20;
+}
+.services_nav_cont>a span{
+  width: 0;
+height: 0;
+border-left: 6px solid transparent;
+border-right: 6px solid transparent;
+border-top: 12px solid #ececef;
+margin-left: 10px;
+top: 10px;
+position: absolute;
+}
+.services_nav_cont:nth-child(1) a span{
+  top:5px;
+}
+.gort span{
+  transform: rotate(-90deg);
+}
+.services_about {
+    width: 67%;
+    color: #ececef;
+}
+.services_about_cont{
+  padding: 20px 40px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.services_about_cont span{
+  display: block;
+  border-top: 1px solid;
+  height: 20px;
+  margin-top: 40px;
+}
+.services_about_cont h2{
+  font: 400 30px/30px Exo2, sans-serif;
+}
+.services_about_cont p,
+.services_about_cont ul, .services_about_cont a{
+  font: 400 18px/36px Exo2, sans-serif;
+  margin-top: 40px;
+}
+.services_about_cont h4{
+      font: 400 20px/20px Exo2, sans-serif;
+      margin-top: 20px;
+}
+.services_about_cont ul{
+  padding-left: 7%;
+}
+.services_about_cont a{
+  text-decoration: underline;
+  color: #ff7d12;
+  display: inline-block;
+  margin-top: 20px;
+}
+.services_about_cont a:hover{
+  text-decoration: none;
+}
+.services_about_cont .icon-checkmark{
+  margin-right: 10px;
 }
