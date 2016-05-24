@@ -34,8 +34,7 @@
         margin-bottom: 12px;
         font-size: 22px;
     }
-    /*SECTION_HY_WE-----------------------------*/
-
+    /*SECTION_WHY_WE-----------------------------*/
 }
 
 /* Medium Devices, Desktops */
@@ -117,8 +116,14 @@
     .services_about_cont {
         margin-top: 10px;
     }
-    /*SECTION_HY_WE-----------------------------*/
-
+    /*SECTION_WHY_WE-----------------------------*/
+    .top_scheme {
+        margin: 40px 0 0 5%;
+    }
+    .scheme_why_we>i {
+        top: -15px;
+        right: 16px;
+    }
 }
 
 /* Small Devices, Tablets */
@@ -144,6 +149,7 @@
     }
     .mob_menu {
         position: fixed;
+        z-index: 100;
         right: 10px;
     }
     nav a {
@@ -214,6 +220,13 @@
     .services_about_cont {
         margin-top: 10px;
     }
+    /*SECTION_WHY_WE-----------------------------*/
+    .top_scheme {
+        margin: 40px 0 0 5%;
+    }
+    .scheme_why_we>i {
+        display: none;
+    }
 }
 
 /* Extra Small Devices, Phones */
@@ -223,12 +236,30 @@
         display: none;
     }
     /*SECTION_SERVICES-----------------------------*/
+    /*SECTION_WHY_WE-----------------------------*/
+    .top_scheme h4 {
+        width: 140px;
+        font-size: 16px;
+    }
 }
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    /*SECTION_WHY_WE-----------------------------*/
+    .top_scheme h4 {
+        width: 130px;
+        font-size: 15px;
+    }
+}
 
 /* Custom, iPhone Retina */
 
-@media only screen and (max-width: 320px) {}
+@media only screen and (max-width: 320px) {
+    /*SECTION_WHY_WE-----------------------------*/
+    .top_scheme h4 {
+        left: -30%;
+        width: 90px;
+        font-size: 15px;
+    }
+}
 
 /*==========  Mobile First Method  ==========*/
 

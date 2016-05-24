@@ -188,7 +188,6 @@
      width: 33%;
  }
  .services_nav_cont {
-     position: relative;
      margin-bottom: 10px;
      padding: 20px 40px;
      background-color: rgba(0, 0, 0, 0.8);
@@ -274,99 +273,98 @@
  .services_about_cont .icon-checkmark {
      margin-right: 10px;
  }
+ /*SECTION why_we---------------------*/
 
-
-/*SECTION why_we---------------------*/
-.why_we{
-  background-color: #fff;
-}
-.why_we .container {
-height: 500px;
-width: 100%;
-display: flex;
-
-justify-content: space-between;
-}
-.why_we h3{
-  width: 250px;
-  text-align: center;
-  font: 400 30px/0px Exo2, sans-serif;
-  padding-right: 40px;
-  margin-top: -5px;
-}
-.scheme_why_we{
-  height: 100%;
-  width: 100%;
-  position: relative;
-}
-.scheme_why_we .top_scheme{
-  width: 90%;
-  height: 3px;
-  border-bottom: 2px solid #130902;
-  position: relative;
-}
-.scheme_why_we .top_scheme::before{
-  content: url(../img/tr.svg);
-  position: absolute;
-  top: -16px;
-  left: -30px;
-  width: 40px;
-  height: 40px;
-}
-.scheme_why_we .top_scheme::after{
-  content: url(../img/tr.svg);
-  position: absolute;
-  top: -16px;
-  right:-30px;
-  width: 40px;
-  height: 40px;
-}
-.scheme_why_we .top_scheme span{
-  border-bottom: 2px solid #130902;
-  width: 25px;
-  top: 2px;
-  height: 25px;
-  position: absolute;
-  transform: rotate(90deg);
-}
-.scheme_why_we .top_scheme div{
-  position: absolute;
-  width: 170px;
-}
-.scheme_why_we .top_scheme div:first-child  {
-  left: 20%;
-}
-.scheme_why_we .top_scheme div:nth-child(2) {
-  left: 50%;
-}
-.scheme_why_we .top_scheme div:last-child {
-  left: 80%;
-}
-.scheme_why_we>i{
-  position: absolute;
-  right: 5px;
-  top: -15px;
-  font-size: 30px;
-}
-.scheme_why_we .top_scheme span::after{
-  content: url(../img/tr.svg);
-  position: absolute;
-  top: 7px;
-  left:  15px;
-  width: 40px;
-  height: 40px;
-}
-.top_scheme h4{
-  position: absolute;
-  top: 80px;
-  width: 170px;
-  text-align: center;
-  left: -50%;
-  font: 600 21px/30px Exo2, sans-serif;
-}
-.top_scheme h4 i{
-  position: absolute;
-  bottom: -50px;
-  left: 40%;
-  font-size: 28px;
-}
+ .why_we {
+     height: 260px;
+     background-color: #fff;
+ }
+ .why_we .container {
+     display: flex;
+     height: 100%;
+     padding-top: 70px;
+     justify-content: space-between;
+ }
+ .why_we h3 {
+     min-width: 240px;
+     margin-top: -5px;
+     padding-right: 40px;
+     text-align: center;
+     font: 400 30px/0px Exo2, sans-serif;
+ }
+ .scheme_why_we {
+     position: relative;
+     width: 100%;
+     height: 100%;
+ }
+ .scheme_why_we .top_scheme {
+     position: relative;
+     width: 90%;
+     height: 3px;
+     border-bottom: 2px solid #130902;
+ }
+ .scheme_why_we .top_scheme::before {
+     position: absolute;
+     top: -16px;
+     left: -30px;
+     width: 40px;
+     height: 40px;
+     content: url(../img/tr.svg);
+ }
+ .scheme_why_we .top_scheme::after {
+     position: absolute;
+     top: -16px;
+     right: -30px;
+     width: 40px;
+     height: 40px;
+     content: url(../img/tr.svg);
+ }
+ .scheme_why_we .top_scheme span {
+     position: absolute;
+     top: 2px;
+     width: 25px;
+     height: 25px;
+     transform: rotate(90deg);
+     border-bottom: 2px solid #130902;
+ }
+ .scheme_why_we .top_scheme div {
+     position: absolute;
+     width: 170px;
+ }
+ .scheme_why_we .top_scheme div:first-child {
+     left: 20%;
+ }
+ .scheme_why_we .top_scheme div:nth-child(2) {
+     left: 50%;
+ }
+ .scheme_why_we .top_scheme div:last-child {
+     left: 80%;
+ }
+ .scheme_why_we>i {
+     position: absolute;
+     top: -15px;
+     right: 5px;
+     font-size: 30px;
+ }
+ .scheme_why_we .top_scheme span::after {
+     position: absolute;
+     top: 7px;
+     left: 15px;
+     width: 40px;
+     height: 40px;
+     content: url(../img/tr.svg);
+ }
+ .top_scheme h4 {
+     position: absolute;
+     top: 80px;
+     left: -50%;
+     width: 170px;
+     text-align: center;
+     font: 600 21px/30px Exo2, sans-serif;
+ }
+ .top_scheme h4 i {
+     position: absolute;
+     bottom: -50px;
+     left: 40%;
+     font-size: 28px;
+ }
