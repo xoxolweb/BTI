@@ -42,6 +42,19 @@
     .comment_1::before, .comment_2::after, .comment_3::before, {
         width: 120px;
     }
+     /*BLOSK_NEWS------------------------------*/
+
+     .body_bl_news .news {
+         flex-basis: 350px;
+         margin-top: 20px;
+     }
+     .news a div {
+         width: 350px;
+         height: 208px;
+     }
+     .news span{
+       margin-left: 19%;
+     }
 }
 
 /* Medium Devices, Desktops */
@@ -80,6 +93,10 @@
     .comment_bl1 img, .comment_bl2 img, .comment_bl3 img {
         width: 200px;
         min-height: 183px;
+    }
+    /*BLOSK_NEWS------------------------------*/
+    .body_bl_news {
+        justify-content: space-around;
     }
 }
 @media only screen and (max-width: 980px) and (min-width: 768px) {
@@ -155,6 +172,22 @@
         margin-right: 30px;
         align-self: flex-end;
     }
+    /*BLOSK_NEWS------------------------------*/
+
+    .body_bl_news .news {
+        flex-basis: 370px;
+        margin-top: 20px;
+    }
+    .news a div {
+        width: 370px;
+  }
+        .body_bl_news {
+            justify-content: space-around;
+        }
+        .news span{
+          margin-left: 18%;
+        }
+
 }
 
 /* Small Devices, Tablets */
@@ -300,6 +333,39 @@
         width: 200px;
         min-height: 183px;
     }
+    /*BLOSK_NEWS------------------------------*/
+    .titile_bl_news h3{
+      font-size: 25px;
+      width: 300px;
+    }
+
+    .body_bl_news .news {
+        flex-basis:auto;
+        margin-top: 20px;
+    }
+    .news a div {
+        width: 100%;
+  }
+        .body_bl_news {
+            justify-content: space-around;
+        }
+        .news{
+          border-bottom: 1px solid #ccc;
+          padding-bottom: 10px;
+        }
+        .news span{
+          float: right;
+        }
+         .news span::before{
+           left:-70%;
+         }
+        .news h4{
+          text-align: center;
+        }
+        .news p{
+          min-width: 320px;
+          text-align: center;
+        }
 }
 
 /* Extra Small Devices, Phones */
@@ -365,6 +431,26 @@
         margin-right: 5px;
         align-self: center;
     }
+  /*BLOSK_NEWS------------------------------*/
+  .titile_bl_news{
+    flex-direction: column;
+  }
+  .titile_bl_news{
+    margin: auto;
+  }
+  .titile_bl_news h3:hover span {
+      left: 0px;
+      width: 225px;
+  }
+  .titile_bl_news h3 span {
+      left: 0;
+      width: 100px;
+      height: 2px;
+      background-color: #130a02;
+  }
+  .titile_bl_news a {
+      margin: auto;
+  }
 }
 @media only screen and (max-width: 480px) {
     /*SECTION_WHY_WE-----------------------------*/
@@ -410,6 +496,25 @@
     .title_bl_comment p {
         font-size: 20px;
     }
+
+/*BLOSK_NEWS------------------------------*/
+    .body_bl_news .news {
+        flex-basis: 320px;
+        margin-top: 20px;
+    }
+    .news a div {
+        width: 320px;
+  }
+  .news h4{
+    font-size: 24px;
+  }
+  .news p{
+    font-size:17px;
+  }
+  .news span{
+    margin-right: 10px;
+  }
+
 }
 
 /* Custom, iPhone Retina */
