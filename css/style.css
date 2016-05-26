@@ -1,5 +1,6 @@
  .container {
      width: 95%;
+     min-width: 320px;
      max-width: 1340px;
      margin: auto;
      /*border: 1px solid;*/
@@ -176,8 +177,7 @@
  .services {
      width: 100%;
      height: 100%;
-     background: fixed #fff url("../img/fon1.jpg") 0 300px no-repeat;
-     background-size: cover;
+     background: fixed #fff url("../img/fon1.jpg") center 260px no-repeat;
  }
  .services .container {
      display: flex;
@@ -276,21 +276,31 @@
  /*SECTION why_we---------------------*/
 
  .why_we {
-     height: 260px;
+     height: 300px;
      background-color: #fff;
  }
  .why_we .container {
      display: flex;
-     height: 100%;
-     padding-top: 70px;
      justify-content: space-between;
  }
  .why_we h3 {
+     position: relative;
      min-width: 240px;
      margin-top: -5px;
      padding-right: 40px;
+     cursor: pointer;
      text-align: center;
      font: 400 30px/0px Exo2, sans-serif;
+ }
+ .why_we h3 span {
+     position: absolute;
+     top: 32px;
+     width: 30px;
+     height: 3px;
+     border-bottom: 2px solid #130a02;
+ }
+ .why_we h3:hover span {
+     width: 180px;
  }
  .scheme_why_we {
      position: relative;
@@ -367,4 +377,210 @@
      bottom: -50px;
      left: 40%;
      font-size: 28px;
+ }
+ /*section RESULTS_WORKS----------------*/
+
+ .results_works {
+     width: 100%;
+     height: 450px;
+     background: fixed #fff url("../img/fon2.jpg") center 40px no-repeat;
+ }
+ .results_works .layer_results {
+     height: 100%;
+     background-color: rgba(7, 24, 34, 0.8);
+ }
+ .results_works .container {
+     display: flex;
+     flex-direction: column;
+     padding: 0;
+     justify-content: flex-start;
+ }
+ .top_block_res {
+     width: 100%;
+     padding-top: 40px;
+     text-align: center;
+     color: #fff;
+ }
+ .top_block_res h3 {
+     position: relative;
+     width: 240px;
+     margin: 0 auto 45px;
+     cursor: pointer;
+     text-align: center;
+     font: 400 30px/0px Exo2, sans-serif;
+ }
+ .top_block_res h3 span {
+     position: absolute;
+     top: 40px;
+     left: 40%;
+     width: 90px;
+     height: 2px;
+     border-bottom: solid 1px #adb1b3;
+ }
+ .top_block_res h3:hover span {
+     left: 5%;
+     width: 250px;
+ }
+ .top_block_res h3 i {
+     position: absolute;
+     top: -15px;
+     right: -18%;
+     padding: 9px 4px 7px;
+     border: 2px solid #fff;
+     border-radius: 50%;
+     font-size: 20px;
+ }
+ .top_block_res p {
+     font: 400 24px/24px Exo2, sans-serif;
+ }
+ .block_plus {
+     display: flex;
+     margin-top: 50px;
+     color: #fff;
+     justify-content: space-between;
+ }
+ .block_plus i {
+     font-size: 34px;
+     align-self: center;
+ }
+ .block_plus>div {
+     position: relative;
+     display: flex;
+     width: 138px;
+     height: 138px;
+     border: solid 2px #fff;
+ }
+ .block_plus>div div {
+     width: 63%;
+     height: 63%;
+     margin: auto;
+     text-align: center;
+     border: solid 2px #fff;
+     background-color: rgba(0, 0, 0, .65);
+     font: 400 30px/83px Exo2, sans-serif;
+ }
+ .block_plus>div p {
+     position: absolute;
+     bottom: -50px;
+     left: -15%;
+     width: 180px;
+     text-align: center;
+     font: 400 18px/18px Exo2, sans-serif;
+ }
+ .block_plus>div p span:first-child {
+     position: absolute;
+     top: 8px;
+     width: 25px;
+     height: 2px;
+     margin-left: -38px;
+     background-color: #fff;
+ }
+ .block_plus>div p span:last-child {
+     position: absolute;
+     top: 5px;
+     width: 0;
+     height: 0;
+     margin-left: 10px;
+     border-top: 6px solid transparent;
+     border-bottom: 6px solid transparent;
+     border-left: 12px solid #fff;
+ }
+ /*BLOCK_CoMMENT--------------------------*/
+
+ .block_comment {
+     height: 100%;
+     background-color: #fff;
+ }
+ .block_comment .container {
+     display: flex;
+     flex-direction: column;
+ }
+ .title_bl_comment {
+     margin: 20px 0 50px;
+ }
+ .title_bl_comment h3 {
+     position: relative;
+     width: 350px;
+     margin: 0 auto 45px;
+     cursor: pointer;
+     font: 400 30px/0px Exo2, sans-serif;
+ }
+ .title_bl_comment span {
+     position: absolute;
+     top: 40px;
+     left: 42%;
+     width: 90px;
+     height: 2px;
+     border-bottom: solid 1px #000;
+ }
+ .title_bl_comment h3:hover span {
+     left: 5%;
+     width: 360px;
+ }
+ .title_bl_comment i {
+     position: absolute;
+     top: -22px;
+     margin-left: 15px;
+     padding: 4px 0 12px 10px;
+     border: 2px solid #000;
+     border-radius: 50%;
+     font-size: 20px;
+ }
+ .title_bl_comment p {
+     text-align: center;
+     font: 400 24px/24px Exo2, sans-serif;
+ }
+ .comment_bl1 img, .comment_bl2 img, .comment_bl3 img {
+     width: 268px;
+     min-width: 200px;
+     min-height: 183px;
+ }
+ .comment_bl1, .comment_bl2, .comment_bl3 {
+     display: flex;
+     margin-bottom: 40px;
+     justify-content: space-between;
+ }
+ .comment_1, .comment_2, .comment_3 {
+     position: relative;
+     width: 700px;
+     height: 190px;
+     border: 2px solid #38302e;
+     align-self: center;
+ }
+ .comment_1::before, .comment_3::before {
+     position: absolute;
+     top: 60px;
+     left: -205px;
+     content: url("../img/com_cog.png");
+ }
+ .comment_1, .comment_3 {
+     margin-left: 205px;
+ }
+ .comment_2 {
+     margin-right: 205px;
+ }
+ .comment_2::after {
+     position: absolute;
+     top: 60px;
+     right: -204px;
+     content: url("../img/com_cog_mirror.png");
+ }
+ .comment_1 span, .comment_2 span, .comment_3 span {
+     position: absolute;
+     top: 30px;
+     width: 26px;
+     height: 2px;
+     background-color: #130902;
+ }
+ .comment_1 h4, .comment_2 h4, .comment_3 h4 {
+     position: relative;
+     margin: 20px 40px;
+     font: 600 20px/20px Exo2, sans-serif;
+ }
+ .comment_1 p, .comment_2 p, .comment_3 p {
+     margin: 25px 20px 20px 40px;
+     font: 400 17px/22px Exo2, sans-serif;
+ }
+ .comment_bl2 {
+     flex-direction: row-reverse;
  }
